@@ -1,0 +1,19 @@
+.portfolio-section {
+    height: wrap;
+    background: #F5F5F5 center no-repeat;
+}
+
+.portfolio-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.portfolio-header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.portfolio-container {
+    margin: auto;
+}

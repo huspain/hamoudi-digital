@@ -1,0 +1,32 @@
+<section class="portfolio-section" id="portfolio">
+  <div class="portfolio-wrap container">
+    <div class="portfolio-header">
+      <div class="row">
+        <div class="col-xs-12" #portHeader>
+          <h2 class="hide-on-init" animateOnScroll animationName="animated fadeIn"><strong>My Website Portfolio</strong></h2>
+          <p class="hide-on-init" animateOnScroll animationName="animated fadeIn">Technology used:</p>
+          <select name="technology" id="technology" (change)="selectChange($event)" class="hide-on-init" animateOnScroll animationName="animated fadeIn">
+            <option #all value="all">Select</option>
+            <option #html value="html">HTML</option>
+            <option #css value="css">CSS</option>
+            <option #javascript value="javascript">Javascript</option>
+            <option #react value="react">React</option>
+            <option #angular value="angular">Angular</option>
+            <option #jquery value="jquery">JQuery</option>
+            <option #bootstrap value="bootstrap">Bootstrap</option>
+            <option #php value="php">PHP</option>
+            <option #wordpress value="wordpress">WordPress</option>
+          </select>
+        </div>
+      </div> 
+    </div>
+    <div class="portfolio-container hide-on-init" #portItem  animateOnScroll animationName="animated fadeIn">
+      <div class="wrap" [@portState]="portState">
+          <app-portfolio-item 
+            *ngFor="let item of portfolioItems | portfolioFilter: selectedTech" 
+            [portfolioItem]="item" 
+          ></app-portfolio-item>
+      </div>
+    </div>
+</div> 
+</section>

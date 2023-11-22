@@ -1,0 +1,63 @@
+/* Moble Header styles */
+
+
+/* General styles */
+.header-section {
+    position: absolute;
+    z-index: 2;
+    background: #fff no-repeat center;
+
+}
+.header-nav { 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-end
+}
+
+/* Logo styles */
+.logo  {
+    padding-top: 35px;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.logo span {
+    font-size: 20px;
+    color: #252932;
+}
+
+/* Nav styles */
+.nav {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Hidden mobile meny styles */
+
+#header-mobile-subsection {
+    background-color: #fff;
+    padding: 0;
+}
+.mobile-menu-toggle i {
+    color: #252932;
+}
+.mobile-menu-toggle.active i{
+    color: rgb(71, 169, 255);
+}
+.mobile-menu {
+    text-align: center;
+    width: 100%;
+}
+.mobile-menu a {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    border-bottom: #000 solid 1px;
+}
+.mobile-menu a:first-child {
+    border-top: #000 solid 1px;
+}
+

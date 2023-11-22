@@ -1,0 +1,34 @@
+<!--Mobile Header-->
+<header class="header-section full-width" id="header-mobile">
+  <div class="container" id="header-mobile-main">
+    <div class="row">
+      <!--Logo section-->
+      <div class="col-xs-10 logo-container">
+        <div class="logo"> 
+          <a href="#">
+            <!--<img src="https://pbs.twimg.com/profile_images/973787892387639298/RHh1oYWH_400x400.jpg">-->
+            <span>< Hamoudi Digital /></span>
+          </a>
+        </div>
+      </div>
+      <!--Navigation section-->
+      <div class="col-xs-2 header-nav">
+          <div class="navigation">
+            <a class="mobile-menu-toggle" (click)="toggleMobileMenu()" [ngClass]="mobileToggle ? 'active' : 'inactive' ">
+              <i class="fa fa-bars fa-2x"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Hidden navigation menu. Activated when the nav icon is toggled-->
+  <ng-container *ngIf="mobileToggle">
+    <div class="container full-width" id="header-mobile-subsection">
+      <div class="mobile-menu">
+        <a href="#home"><strong>Home</strong></a>
+        <a href="#portfolio"><strong>Portfolio</strong></a>
+        <a href="#contact"><strong>Contact</strong></a>
+      </div>
+    </div>
+  </ng-container>
+</header>

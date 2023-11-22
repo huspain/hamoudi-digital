@@ -1,0 +1,50 @@
+h3 {
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.portfolio-item-container {
+    height: 350px;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+
+.portfolio-item-container:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.portfolio-item-content {
+    padding: 20px;
+    padding-top: 70px;
+    height: inherit;
+    text-align: center;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0;
+    transition: .5s;
+}
+.portfolio-item-content h3,
+.portfolio-item-content button {
+    transition: .5s;
+}
+
+.portfolio-item-content:hover h3,
+.portfolio-item-content:hover button {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.portfolio-item-content button {
+    background-color: #000;
+    color: #fff;
+}
+
+.portfolio-item-content button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
