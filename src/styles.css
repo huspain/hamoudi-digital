@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/animate.css';
 
+body {
+  overflow-x: hidden;
+}
 .full-width {
     width: 100vw;
     position: relative;
